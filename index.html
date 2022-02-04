@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="빽다방 반응형 클론 웹페이지">
+    <meta name="keywords" content="paik, 빽다방, 백종원, 커피, 아아, coffee">
+    <meta name="author" content="cho hwanjoon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pam7464.github.io/paikdabang/images/og.jpg">
+    <meta property="og:title" content="빽다방">
+    <meta property="og:description" content="여기를 눌러 링크를 확인하세요">
+    <meta property="og:url" content="https://pam7464.github.io/paikdabang/">
+
+    <!-- <meta name="twitter:card" content="summary"> -->
+    <!-- <meta name="twitter:site" content="@paikscoffee"> -->
+
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>빽다방</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/index.css">    
+    
+    <style>
+               
+    </style>
+</head>
+<body>
+    <section class="skip-menu">
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+    </section>
+    <section class="popup-par" style="display:none;">
+        <section class="popup">
+            <div class="btn-close"></div>
+            <div class="popup-main">
+                <div class="img-box">
+                    <a href="#">
+                        <img src="./images/mmain-banner01.jpg" alt="콜드블루">
+                    </a>
+                </div>
+            </div>
+            <div class="chk-box">
+                <label>
+                    <input type="checkbox">
+                    24시간 열지 않음
+                </label>
+            </div>
+        </section>
+    </section>
+    <div class="login" style="position:fixed;left:0;right:0;top:0;bottom:0;z-index:10001;">
+        <form>
+            <h2>
+                <i class="fas fa-sign-in-alt"></i>
+                ID 로그인
+            </h2>
+            <div class="input01">
+                <i class="far fa-user"></i>
+                <input type="text" id="user-id" placeholder="아이디">
+            </div>
+            <div class="input02">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="password" id="user-pass" placeholder="패스워드">
+            </div>
+            <div class="input05">
+                <label>
+                    <input type="checkbox" id="save-id">
+                    <div class="chk-id">
+                        <div class="line01"></div>
+                        <div class="line02"></div>
+                    </div>
+                    ID 저장
+                </label>
+            </div> 
+            <div class="input03">
+                <input type="submit" value="로그인" id="btn-send">
+            </div>
+            <div class="input04">
+                <input type="reset" value="취소" id="btn-reset">
+            </div>
+                       
+        </form>
+    </div>
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="inner">
+                    <div class="h-left">
+                        <h1><a href="./index.html"><img src="./images/logo.png" alt="시작페이지로 이동"></a></h1>
+                    </div>
+                    <div class="h-right">
+                        <ul class="sm-nav">
+                            <li><a href="#" id="btn-login">로그인</a></li>
+                            <li><a href="#">더본코리아</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li class="ico-sns"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li class="ico-sns"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <div class="btn-nav">
+                            <div class="line">라인</div>
+                            <div class="line">라인</div>
+                            <div class="line">라인</div>
+                        </div>
+                        <nav class="nav">
+                            <ul class="main-nav">
+                                <li>
+                                    <a href="#">빽다방</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="./paik-info.html">ceo 인사말</a></li>
+                                        <li><a href="#">빽다방 소개</a></li>
+                                        <li><a href="#">커피이야기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">메뉴</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="./menu.html">신메뉴</a></li>
+                                        <li><a href="#">커피</a></li>
+                                        <li><a href="#">음료</a></li>
+                                        <li><a href="#">아이스크림/디저트</a></li>
+                                        <li><a href="#">빽스치노</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">소식</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="./notice.html">소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">친절 우수매장</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">커뮤니티</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="#">커피 클래스</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">매장안내</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="#">매장찾기</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">창업안내</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="#">가맹정보 및 절차</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li><a href="#">고객의 소리</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="sec main-slider" id="top">
+            <div class="container">
+                <div class="slider">
+                    <div>
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./images/main-banner01.jpg">
+                                <img src="./images/mmain-banner01.jpg" alt="콜드브루 커피">
+                            </picture>                            
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./images/main-banner02.jpg">
+                                <img src="./images/mmain-banner02.jpg" alt="멤버십">
+                            </picture>                            
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./images/main-banner03.jpg">
+                                <img src="./images/mmain-banner03.png" alt="쑥라떼">
+                            </picture>                            
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./images/main-banner04.jpg">
+                                <img src="./images/mmain-banner04.jpg" alt="호떡 라떼">
+                            </picture>                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec coffee-story">
+            <div class="container">
+                <div class="inner">
+                    <h2>the finest quality coffee plants</h2>
+                    <h3>paik's coffee story</h3>
+                    <p>균형잡힌 바디감으로 긴 여운을 남기는 빽다방 커피를 만나보세요</p>
+                    <div class="btn-hover">                        
+                        <div class="ico-paik">
+                            <img src="./images/main_sec6.png" alt="바로가기 아이콘">
+                        </div>
+                        <div class="rotate-plus"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec item-sec fresh-coffee">
+            <div class="img-box">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="./images/main_sec2.jpg">
+                    <img src="./images/mmain_sec2.jpg" alt="프래쉬커피">
+                </picture>                            
+            </div>
+            <div class="container">               
+                <div class="inner">
+                    <div class="content">
+                        <h3>
+                            FRESH
+                            <br>
+                            COFFEE
+                        </h3>
+                        <hr>
+                        <p>
+                            신선한 뉴크롭 원두를 사용하여
+                            <br>
+                            추출한 커피메뉴!
+                        </p>
+                    </div>
+                    <div class="btn-hover">                        
+                        <div class="ico-paik">
+                            <img src="./images/main_sec6.png" alt="바로가기 아이콘">
+                        </div>
+                        <div class="rotate-plus"></div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section class="sec various-sweet clearfix">
+            <article class="item-sec various">
+                <div class="img-box">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./images/main_sec3.jpg">
+                        <img src="./images/mmain_sec3.jpg" alt="프래쉬커피">
+                    </picture>                            
+                </div>
+                <div class="container">               
+                    <div class="inner">
+                        <div class="content">
+                            <h3>
+                                VARIOUS
+                                <br>
+                                BEVERAGE
+                            </h3>
+                            <hr>
+                            <p>
+                                에이드, 티, 주스 등 취향대로
+                                <br>
+                                골라 먹는 즐거움!
+                            </p>
+                        </div>
+                        <div class="btn-hover">                        
+                            <div class="ico-paik">
+                                <img src="./images/main_sec6.png" alt="바로가기 아이콘">
+                            </div>
+                            <div class="rotate-plus"></div>
+                        </div>
+                    </div>
+                </div>   
+            </article>
+            <article class="item-sec sweet">
+                <div class="img-box">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./images/main_sec4.jpg">
+                        <img src="./images/mmain_sec4.jpg" alt="프래쉬커피">
+                    </picture>                            
+                </div>
+                <div class="container">               
+                    <div class="inner">
+                        <div class="content">
+                            <h3>
+                                SWEET
+                                <br>
+                                PAIK'S CCINO
+                            </h3>
+                            <hr>
+                            <p>
+                                달콤 시원한 빽다방
+                                <br>
+                                시그니처 메뉴!
+                            </p>
+                        </div>
+                        <div class="btn-hover">                        
+                            <div class="ico-paik">
+                                <img src="./images/main_sec6.png" alt="바로가기 아이콘">
+                            </div>
+                            <div class="rotate-plus"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="sec dessert-fran-store">
+            <article class="item-sec dessert">
+                <div class="img-box">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./images/main_sec5.jpg">
+                        <img src="./images/mmain_sec5.jpg" alt="프래쉬커피">
+                    </picture>                            
+                </div>
+                <div class="container">               
+                    <div class="inner">
+                        <div class="content">
+                            <h3>
+                                TASTY
+                                <br>
+                                ICE CREAM /
+                                <br>
+                                DESSERT
+                            </h3>
+                            <hr>
+                            <p>
+                                달콤한 아이스크림부터
+                                <br>
+                                든든한 브레드 까지!
+                            </p>
+                        </div>
+                        <div class="btn-hover">                        
+                            <div class="ico-paik">
+                                <img src="./images/main_sec6.png" alt="바로가기 아이콘">
+                            </div>
+                            <div class="rotate-plus"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="fran-store">
+                <div class="container">
+                    <div class="inner">
+                        <div class="fran">
+                            <h3>franchise</h3>
+                            <p>빽다방 창업안내를 도와드립니다</p>
+                            <div class="btn-hover">                        
+                                <div class="ico-paik">
+                                    <img src="./images/main_sec6.png" alt="바로가기 아이콘">
+                                </div>
+                                <div class="rotate-plus"></div>
+                            </div>
+                        </div>
+                        <div class="store">
+                            <h3>store</h3>
+                            <p>원하시는 지역의 매장을 검색해 보세요!</p>
+                            <div class="search">
+                                <input type="text" placeholder="매장을 검색하세요">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="sec sns">
+            <div class="container">
+                <h2>paik's coffee sns</h2>
+                <p>
+                    <span>#빽다방</span>
+                    <span>#빽다방 신메뉴</span>
+                    <span>#빽다방 이벤트</span>
+                </p>
+                <hr>
+                <div class="ico-sns">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="img-box">
+                    <a href="./index.html">
+                        <img src="./images/flogo.png" alt="처음으로 이동">
+                    </a>
+                </div>
+                <address>
+                    <ul>
+                        <li><a href="#">(주)더본코리아</a></li>
+                        <li><a href="#">사업자등록번호 211-86-00980</a></li>
+                        <li><a href="#">대표이사 백종원</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">주소:서울시 강남구 봉은사로 1길 유성빌딩 5~6층</a></li>
+                        <li><a href="#">팩스:02-511-3864</a></li>                    
+                    </ul>
+                    <ul>
+                        <li><a href="#">본사 대표전화:02-549-3864</a></li>
+                        <li><a href="#">가맹상담전화:02-3447-0410</a></li>
+                        <li><a href="#">고객센터:1544-2360</a></li>
+                    </ul>
+                    <div class="copyright">
+                        COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+                    </div>
+                </address>
+                <div class="f-site">
+                    <span>패밀리사이트 바로가기</span>
+                    <ul class="f-list">
+                        <li><a href="#">더본코리아</a></li>
+                        <li><a href="#">창업센터</a></li>
+                        <li><a href="#">새마을식당</a></li>
+                        <li><a href="#">한실포차</a></li>
+                        <li><a href="#">역전우동</a></li>
+                        <li><a href="#">백스비어</a></li>
+                        <li><a href="#">롤링파스타</a></li>
+                        <li><a href="#">인생설렁탕</a></li>
+                        <li><a href="#">미정국수</a></li>
+                        <li><a href="#">리춘시장</a></li>
+                        <li><a href="#">원조쌈밥집</a></li>
+                        <li><a href="#">돌배기집</a></li>
+                        <li><a href="#">백철판</a></li>
+                        <li><a href="#">호텔더본</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </footer>
+        <section class="scr-top">
+            <div class="container">
+                <a href="#top" class="btn-top">                                           
+                    <span>TOP</span> 
+                </a>
+            </div>
+        </section>
+    </section>
+    
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bxslider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/rsp-menu.min.js"></script>
+    <script src="./js/f-site.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script>        
+        $('.slider').bxSlider();
+
+        // 모달닫기
+        $('.btn-close').on({
+            'click':function(){
+                $('.popup-par').css('display','none');
+                $('.wrap').css('height','auto');
+                if($('.chk-box input').is(':checked')){
+                    // 오늘날짜
+                    // let nowDate = new Date();                    
+                    // 오늘일
+                    // let nowDay = nowDate.getDate();                    
+                    // 끝날짜
+                    // let endDate = new Date(nowDate.setDate(nowDay+1))
+                    // document.cookie = 'popup=n;expires='+ endDate +';';
+                    $.cookie('modal-popup', 'no', { expires: 1 });
+                }
+            }
+        })
+
+        if($.cookie('modal-popup') == 'no'){
+            $('.wrap').css('height','auto');
+        }else{
+            $('.popup-par').css('display','block');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<div id="notice01">
+    <h2 id="notice-tit">소식</h2>
+    <hr>
+    <p id="notice-txt">다양한 새로운 소식을 확인하세요!</p>
+</div>
+<div id="notice02">
+    <h2 id="notice-tit">이벤트</h2>
+    <hr>
+    <p id="notice-txt">다양한 이벤트를 확인하세요!</p>
+</div>
+<div id="notice03">
+    <h2 id="notice-tit">친절우수매장</h2>
+    <hr>
+    <p id="notice-txt">이달의 친절우수매장을 방문해보세요!</p>
+</div>
+
+<ul class="table table01">
+    <li class="table-head">
+        <ul>
+            <li class="num">번호</li>
+            <li class="sub-class">분류</li>
+            <li class="title">제목</li>
+            <li class="date">등록일</li>
+            <li class="view">조회수</li>
+        </ul>
+    </li>
+    <li class="list list01">
+        <ul>
+            <li class="num">100</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2022-02-04</li>
+            <li class="view">50</li>
+        </ul>
+    </li>
+    <li class="list list02">
+        <ul>
+            <li class="num">99</li>
+            <li class="sub-class">소식</li>
+            <li class="title">호랑이 기운이 쑥쑥, ‘쑥쑥라떼’, ‘쑥쑥빽스치노’ 출시</li>
+            <li class="date">2022-02-04</li>
+            <li class="view">99</li>
+        </ul>
+    </li>
+    <li class="list list03">
+        <ul>
+            <li class="num">98</li>
+            <li class="sub-class">소식</li>
+            <li class="title">2022 캘린더 한정수량 증정!</li>
+            <li class="date">2022-01-22</li>
+            <li class="view">300</li>
+        </ul>
+    </li>
+    <li class="list list04">
+        <ul>
+            <li class="num">98</li>
+            <li class="sub-class">소식</li>
+            <li class="title">12곡으로 든든하고 흑당으로 더 달콤한, 마시는 호떡음료 출시</li>
+            <li class="date">2022-1-02</li>
+            <li class="view">300</li>
+        </ul>
+    </li>
+    <li class="list list05">
+        <ul>
+            <li class="num">96</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-31</li>
+            <li class="view">400</li>
+        </ul>
+    </li>
+    <li class="list list06">
+        <ul>
+            <li class="num">95</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-25</li>
+            <li class="view">500</li>
+        </ul>
+    </li>
+    <li class="list list07">
+        <ul>
+            <li class="num">94</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-20</li>
+            <li class="view">600</li>
+        </ul>
+    </li>
+    <li class="list list08">
+        <ul>
+            <li class="num">100</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-20</li>
+            <li class="view">604</li>
+        </ul>
+    </li>
+    <li class="list list09">
+        <ul>
+            <li class="num">92</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-14</li>
+            <li class="view">700</li>
+        </ul>
+    </li>
+    <li class="list list10">
+        <ul>
+            <li class="num">91</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-10</li>
+            <li class="view">900</li>
+        </ul>
+    </li>                            
+</ul>
+
+<ul class="table table02">
+    <li class="table-head">
+        <ul>
+            <li class="num">번호</li>
+            <li class="sub-class">분류</li>
+            <li class="title">제목</li>
+            <li class="date">등록일</li>
+            <li class="view">조회수</li>
+        </ul>
+    </li>
+    <li class="list list01">
+        <ul>
+            <li class="num">100</li>
+            <li class="sub-class">소식</li>
+            <li class="title">빽다방 티머니페이 3,000원 캐시백 이벤트!</li>
+            <li class="date">2022-02-04</li>
+            <li class="view">50</li>
+        </ul>
+    </li>
+    <li class="list list02">
+        <ul>
+            <li class="num">99</li>
+            <li class="sub-class">소식</li>
+            <li class="title">호랑이 기운이 쑥쑥, ‘쑥쑥라떼’, ‘쑥쑥빽스치노’ 출시</li>
+            <li class="date">2022-02-04</li>
+            <li class="view">99</li>
+        </ul>
+    </li>
+    <li class="list list03">
+        <ul>
+            <li class="num">98</li>
+            <li class="sub-class">소식</li>
+            <li class="title">2022 캘린더 한정수량 증정!</li>
+            <li class="date">2022-01-22</li>
+            <li class="view">300</li>
+        </ul>
+    </li>
+    <li class="list list04">
+        <ul>
+            <li class="num">98</li>
+            <li class="sub-class">소식</li>
+            <li class="title">12곡으로 든든하고 흑당으로 더 달콤한, 마시는 호떡음료 출시</li>
+            <li class="date">2022-1-02</li>
+            <li class="view">300</li>
+        </ul>
+    </li>
+    <li class="list list05">
+        <ul>
+            <li class="num">96</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-31</li>
+            <li class="view">400</li>
+        </ul>
+    </li>
+    <li class="list list06">
+        <ul>
+            <li class="num">95</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-25</li>
+            <li class="view">500</li>
+        </ul>
+    </li>
+    <li class="list list07">
+        <ul>
+            <li class="num">94</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-20</li>
+            <li class="view">600</li>
+        </ul>
+    </li>
+    <li class="list list08">
+        <ul>
+            <li class="num">100</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-20</li>
+            <li class="view">604</li>
+        </ul>
+    </li>
+    <li class="list list09">
+        <ul>
+            <li class="num">92</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-14</li>
+            <li class="view">700</li>
+        </ul>
+    </li>
+    <li class="list list10">
+        <ul>
+            <li class="num">91</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-10</li>
+            <li class="view">900</li>
+        </ul>
+    </li>                            
+</ul>
+
+<ul class="table table03">
+    <li class="table-head">
+        <ul>
+            <li class="num">번호</li>
+            <li class="sub-class">분류</li>
+            <li class="title">제목</li>
+            <li class="date">등록일</li>
+            <li class="view">조회수</li>
+        </ul>
+    </li>
+    <li class="list list01">
+        <ul>
+            <li class="num">100</li>
+            <li class="sub-class">소식</li>
+            <li class="title">2019년 4분기 빽다방 “친절 우수매장”</li>
+            <li class="date">2022-02-04</li>
+            <li class="view">50</li>
+        </ul>
+    </li>
+    <li class="list list02">
+        <ul>
+            <li class="num">99</li>
+            <li class="sub-class">소식</li>
+            <li class="title">호랑이 기운이 쑥쑥, ‘쑥쑥라떼’, ‘쑥쑥빽스치노’ 출시</li>
+            <li class="date">2022-02-04</li>
+            <li class="view">99</li>
+        </ul>
+    </li>
+    <li class="list list03">
+        <ul>
+            <li class="num">98</li>
+            <li class="sub-class">소식</li>
+            <li class="title">2022 캘린더 한정수량 증정!</li>
+            <li class="date">2022-01-22</li>
+            <li class="view">300</li>
+        </ul>
+    </li>
+    <li class="list list04">
+        <ul>
+            <li class="num">98</li>
+            <li class="sub-class">소식</li>
+            <li class="title">12곡으로 든든하고 흑당으로 더 달콤한, 마시는 호떡음료 출시</li>
+            <li class="date">2022-1-02</li>
+            <li class="view">300</li>
+        </ul>
+    </li>
+    <li class="list list05">
+        <ul>
+            <li class="num">96</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-31</li>
+            <li class="view">400</li>
+        </ul>
+    </li>
+    <li class="list list06">
+        <ul>
+            <li class="num">95</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-25</li>
+            <li class="view">500</li>
+        </ul>
+    </li>
+    <li class="list list07">
+        <ul>
+            <li class="num">94</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-20</li>
+            <li class="view">600</li>
+        </ul>
+    </li>
+    <li class="list list08">
+        <ul>
+            <li class="num">100</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-20</li>
+            <li class="view">604</li>
+        </ul>
+    </li>
+    <li class="list list09">
+        <ul>
+            <li class="num">92</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-14</li>
+            <li class="view">700</li>
+        </ul>
+    </li>
+    <li class="list list10">
+        <ul>
+            <li class="num">91</li>
+            <li class="sub-class">소식</li>
+            <li class="title">장시간 저온숙성해 맛과 향이 더욱 진한 콜드브루</li>
+            <li class="date">2021-12-10</li>
+            <li class="view">900</li>
+        </ul>
+    </li>                            
+</ul>

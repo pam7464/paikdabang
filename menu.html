@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="빽다방 반응형 클론 웹페이지">
+    <meta name="keywords" content="paik, 빽다방, 백종원, 커피, 아아, coffee">
+    <meta name="author" content="cho hwanjoon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pam7464.github.io/paikdabang/images/og.jpg">
+    <meta property="og:title" content="빽다방">
+    <meta property="og:description" content="여기를 눌러 링크를 확인하세요">
+    <meta property="og:url" content="https://pam7464.github.io/paikdabang/">
+
+    <!-- <meta name="twitter:card" content="summary"> -->
+    <!-- <meta name="twitter:site" content="@paikscoffee"> -->
+
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiperJs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>빽다방</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/sub-default.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section class="skip-menu">
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+    </section>
+    
+    <div class="login" style="position:fixed;left:0;right:0;top:0;bottom:0;z-index:10001;">
+        <form>
+            <h2>
+                <i class="fas fa-sign-in-alt"></i>
+                ID 로그인
+            </h2>
+            <div class="input01">
+                <i class="far fa-user"></i>
+                <input type="text" id="user-id" placeholder="아이디">
+            </div>
+            <div class="input02">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="password" id="user-pass" placeholder="패스워드">
+            </div>
+            <div class="input05">
+                <label>
+                    <input type="checkbox" id="save-id">
+                    <div class="chk-id">
+                        <div class="line01"></div>
+                        <div class="line02"></div>
+                    </div>
+                    ID 저장
+                </label>
+            </div> 
+            <div class="input03">
+                <input type="submit" value="로그인" id="btn-send">
+            </div>
+            <div class="input04">
+                <input type="reset" value="취소" id="btn-reset">
+            </div>
+                       
+        </form>
+    </div>
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="inner">
+                    <div class="h-left">
+                        <h1><a href="./index.html"><img src="./images/logo.png" alt="시작페이지로 이동"></a></h1>
+                    </div>
+                    <div class="h-right">
+                        <ul class="sm-nav">
+                            <li><a href="#" id="btn-login">로그인</a></li>
+                            <li><a href="#">더본코리아</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li class="ico-sns"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li class="ico-sns"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <div class="btn-nav">
+                            <div class="line">라인</div>
+                            <div class="line">라인</div>
+                            <div class="line">라인</div>
+                        </div>
+                        <nav class="nav">
+                            <ul class="main-nav">
+                                <li>
+                                    <a href="#">빽다방</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="./paik-info.html">ceo 인사말</a></li>
+                                        <li><a href="#">빽다방 소개</a></li>
+                                        <li><a href="#">커피이야기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">메뉴</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="./menu.html">신메뉴</a></li>
+                                        <li><a href="#">커피</a></li>
+                                        <li><a href="#">음료</a></li>
+                                        <li><a href="#">아이스크림/디저트</a></li>
+                                        <li><a href="#">빽스치노</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">소식</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="./notice.html">소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">친절 우수매장</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">커뮤니티</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="#">커피 클래스</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">매장안내</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="#">매장찾기</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">창업안내</a>
+                                    <ul class="sub-nav">
+                                        <li><a href="#">가맹정보 및 절차</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li><a href="#">고객의 소리</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="sec sub-main">
+            <section class="sec sub-top">
+                <div class="container">
+                    <div class="inner">
+                        <div class="txt">
+                            <h2 id="menu-tit">신메뉴</h2>
+                            <hr>
+                            <p id="menu-txt">지금 바로 가까운 매장에서 빽다방 신메뉴를 만나 보실 수 있습니다.</p>
+                        </div>
+                        <div class="btn-sub">
+                            <ul>
+                                <li class="active">신메뉴</li>
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>아이스크림/디저트</li>
+                                <li>빽스치노</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec sub-bottom">
+                <div class="container">
+                    <div class="inner" id="sub-bottom-inner">
+                        <div>
+                            <h2>추천메뉴</h2>
+                            
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img src="./images/img-new01.png" alt="콜드브루">
+                                        </div>
+                                        <h3>콜드브루</h3>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img src="./images/img-new02.png" alt="콜드브루라떼">
+                                        </div>
+                                        <h3>콜드브루라떼</h3>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img src="./images/img-new03.png" alt="콜드브루연유라떼">
+                                        </div>
+                                        <h3>콜드브루연유라떼</h3>
+                                    </div>                                
+                                </div>                            
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                            </div>
+
+                            <div class="menu-list">
+                                <ul>
+                                    <li>
+                                        <div class="img-box">
+                                            <img src="./images/img-new01.png" alt="콜드브루">
+                                        </div>
+                                        <h3>콜드브루</h3>
+                                    </li>
+                                    <li>
+                                        <div class="img-box">
+                                            <img src="./images/img-new02.png" alt="콜드브루라떼">
+                                        </div>
+                                        <h3>콜드브루라떼</h3>
+                                    </li>
+                                    <li>
+                                        <div class="img-box">
+                                            <img src="./images/img-new03.png" alt="콜드브루연유라떼">
+                                        </div>
+                                        <h3>콜드브루연유라떼</h3>
+                                    </li>
+                                    <li>
+                                        <div class="img-box">
+                                            <img src="./images/img-coffee01.png" alt="신메뉴1">
+                                        </div>
+                                        <h3>에스프레소</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="img-box">
+                    <a href="./index.html">
+                        <img src="./images/flogo.png" alt="처음으로 이동">
+                    </a>
+                </div>
+                <address>
+                    <ul>
+                        <li><a href="#">(주)더본코리아</a></li>
+                        <li><a href="#">사업자등록번호 211-86-00980</a></li>
+                        <li><a href="#">대표이사 백종원</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">주소:서울시 강남구 봉은사로 1길 유성빌딩 5~6층</a></li>
+                        <li><a href="#">팩스:02-511-3864</a></li>                    
+                    </ul>
+                    <ul>
+                        <li><a href="#">본사 대표전화:02-549-3864</a></li>
+                        <li><a href="#">가맹상담전화:02-3447-0410</a></li>
+                        <li><a href="#">고객센터:1544-2360</a></li>
+                    </ul>
+                    <div class="copyright">
+                        COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+                    </div>
+                </address>
+                <div class="f-site">
+                    <span>패밀리사이트 바로가기</span>
+                    <ul class="f-list">
+                        <li><a href="#">더본코리아</a></li>
+                        <li><a href="#">창업센터</a></li>
+                        <li><a href="#">새마을식당</a></li>
+                        <li><a href="#">한실포차</a></li>
+                        <li><a href="#">역전우동</a></li>
+                        <li><a href="#">백스비어</a></li>
+                        <li><a href="#">롤링파스타</a></li>
+                        <li><a href="#">인생설렁탕</a></li>
+                        <li><a href="#">미정국수</a></li>
+                        <li><a href="#">리춘시장</a></li>
+                        <li><a href="#">원조쌈밥집</a></li>
+                        <li><a href="#">돌배기집</a></li>
+                        <li><a href="#">백철판</a></li>
+                        <li><a href="#">호텔더본</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </footer>
+        <section class="scr-top">
+            <div class="container">
+                <a href="#top" class="btn-top">                                           
+                    <span>TOP</span> 
+                </a>
+            </div>
+        </section>
+    </section>
+    
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swiperJs -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- jQuery cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/rsp-menu.min.js"></script>
+    <script src="./js/f-site.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script>        
+        $('.btn-sub ul li').on({
+            'click':function(){
+                $('.btn-sub ul li').removeClass('active');
+                $(this).addClass('active');
+            }
+        })
+        
+        
+        // 스와이퍼슬라이드
+        let swiper = new Swiper('.swiper', {            
+                // 슬라이더 기본설정
+                slidesPerView: 1,
+                spaceBetween:24,
+
+                // 반응형포인트
+                breakpoints:{
+                    640:{
+                        slidesPerView: 2,
+                    },
+                    768:{
+                        slidesPerView: 2.5,
+                    },
+                    960:{
+                        slidesPerView: 3,
+                    },
+                },
+
+                // 내비게이션 버튼
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        
+
+        $('.sub-nav a,.btn-sub li').on({
+            'click':function(){
+                let target = $(this).text();
+                if(target=='신메뉴'){
+                    $('#menu-tit').load('./db/menu.txt #menu-tit01');
+                    $('#menu-txt').load('./db/menu.txt #menu-txt01');
+                    $('#sub-bottom-inner').load('menu.txt #menu-content01');
+                }else if(target=='커피'){
+                    $('#menu-tit').load('./db/menu.txt #menu-tit02');
+                    $('#menu-txt').load('./db/menu.txt #menu-txt02');
+                    $('#sub-bottom-inner').load('./db/menu.txt #menu-content02');
+                }else if(target=='음료'){
+                    $('#menu-tit').load('./db/menu.txt #menu-tit03');
+                    $('#menu-txt').load('./db/menu.txt #menu-txt03');
+                    $('#sub-bottom-inner').load('./db/menu.txt #menu-content03');
+                }else if(target=='아이스크림/디저트'){
+                    $('#menu-tit').load('./db/menu.txt #menu-tit04');
+                    $('#menu-txt').load('./db/menu.txt #menu-txt04');
+                    $('#sub-bottom-inner').load('./db/menu.txt #menu-content04');
+                }else if(target=='빽스치노'){
+                    $('#menu-tit').load('./db/menu.txt #menu-tit05');
+                    $('#menu-txt').load('./db/menu.txt #menu-txt05');
+                    $('#sub-bottom-inner').load('./db/menu.txt #menu-content05');
+                }                                     
+            }
+        })  
+    </script>
+</body>
+</html>
